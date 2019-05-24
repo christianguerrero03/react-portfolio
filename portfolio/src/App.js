@@ -1,30 +1,28 @@
 import React from 'react';
 import './App.css';
-import {slide as Menu} from 'react-burger-menu'
+//import {slide as Menu} from 'react-burger-menu'
+import SlideMenu from "./SlideMenu";
+import headshot from "Headshot.jpg";
 
-function App() {
-  var isMenuOpen = function(state) {
-    return state.isOpen;
-  };
-  return (
-    <div className="App">
-      <Menu onStateChange={isMenuOpen}>
-        <a id="home" className="menu-item" href="/">Home</a>
-        <a id="about" className="menu-item" href="/about">About</a>
-        <a id="contact" className="menu-item" href="/contact">Contact</a>
-        {/*<a onClick={ this.showSettings } className="menu-item--small" href="">Settings</a>*/}
-      </Menu>
-      <header className="App-header">
-        <h1>Christian Guerrero</h1>
-      </header>
-      <body className="App-body">
+export class App extends React.Component {
 
-      </body>
-      <footer className="App-footer">
-
-      </footer>
-    </div>
-  );
+  render () {
+    return (
+      <div className="App">
+        <SlideMenu className="App-menu"/>
+        <header className="App-header">
+          <h2>Christian Guerrero</h2>
+        </header>
+        <body className="App-body">
+          <image src={headshot} alt="Headshot"></image>
+        </body>
+        <footer className="App-footer">
+  
+        </footer>
+      </div>
+    );
+  }
+ 
 }
 
 export default App;
