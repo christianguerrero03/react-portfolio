@@ -22,7 +22,7 @@
 }
 
 .App-body {
-  background-color: white;
+  background-color: #404858;
   min-height: 85vh;
   display: flex;
   flex-direction: column;
@@ -40,16 +40,20 @@
 
 .Headshot {
   width: 25%;
-  display: block;
-  float: left;
+  min-width: 300px;
+  display: inline-block;
+  vertical-align: middle;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .Body-info {
-  width: 75%;
+  width: 65%;
+  min-width: 300px;
   height: 100%;
-  display: block;
-  float: right;
-  background-color: black;
+  padding: 0 5%;
+  display: inline-block;
+  vertical-align: middle;
+  color: white;
 }
 
 .App-footer {

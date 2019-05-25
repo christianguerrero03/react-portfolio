@@ -17,8 +17,7 @@ export class App extends React.Component {
           <div className="Body-row">
             <img src={headshot} alt="Headshot" className="Headshot"/>
             <div className="Body-info">
-              <h3>Welcome to my portfolio!</h3>
-              <p>More info about me</p>
+              <h1>Hi, my name is Christian and I am a Software Engineer.</h1>
             </div>
           </div>
           
