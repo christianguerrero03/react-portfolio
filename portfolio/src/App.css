@@ -32,6 +32,26 @@
   color: white;
 }
 
+.Body-row {
+  height: calc(100%-5%);
+  width: calc(100%-5%);
+  margin: 5% 5%;
+}
+
+.Headshot {
+  width: 25%;
+  display: block;
+  float: left;
+}
+
+.Body-info {
+  width: 75%;
+  height: 100%;
+  display: block;
+  float: right;
+  background-color: black;
+}
+
 .App-footer {
   background-color: #282c34;
   min-height: 5vh;
