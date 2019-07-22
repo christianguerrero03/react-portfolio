@@ -1,64 +1,120 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+html,
+body {
+  box-sizing: border-box;
+  height: 100vh;
+  min-height: 100vh;
+  min-width: 350px;;
+}
+*,*:before, *:after {
+  box-sizing:inherit;
 }
 
-.App-menu {
-  display: inline;
+.App {
+  text-align: center;
+  height: auto;
+  min-height: 100vh;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 10vh;
-  height: 100px;
+  height: 70px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 1.5vmin);
   color: white;
 }
-.App-header h2 {
+
+.App-header ul {
   margin: 0;
+  padding: 0;
+}
+.App-header li{
+  display: inline-block;
+}
+
+.NavButton {
+  width: 25vw;
+  height: 70px;
+  background-color: #282c34;
+  color: white;
+  font-family: 'Montserrat', serif;
+  border: #1d2025;
+  text-decoration: none;
+  font-size: 1em
+}
+
+.NavButton:hover {
+  background-color: #323946;
 }
 
 .App-body {
   background-color: #404858;
-  min-height: 85vh;
+  height: auto;
+  min-height: calc(100vh - 70px);
+  top: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: static;
   font-size: calc(10px + 2vmin);
   color: white;
+  background-image: url("Background.svg");
+  background-size: cover;
 }
 
 .Body-row {
-  height: calc(100%-5%);
-  width: calc(100%-5%);
-  margin: 5% 5%;
-}
-
-.Headshot {
-  width: 25%;
-  min-width: 300px;
-  display: inline-block;
-  vertical-align: middle;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: auto;
+  min-height: calc(90vh - 70px);
+  width: 95vw;
+  margin: 5vh 5vw;
 }
 
 .Body-info {
-  width: 65%;
+  /*width: 65%;*/
+  width: 100%;
   min-width: 300px;
-  height: 100%;
+  height: auto;
+  min-height: calc(90vh - 100px);
   padding: 0 5%;
   display: inline-block;
   vertical-align: middle;
+  text-align: center;
   color: white;
+  font-family: 'Montserrat', serif;
+}
+
+.Body-info h3 {
+  color: #FF4D4D;
+}
+
+.Body-info a {
+  color: white;
+  text-decoration: none;
+}
+
+.Body-info a:hover {
+  color: rgb(205, 232, 255);
+}
+
+.Icon {
+  margin: 15px;
+}
+
+.ImageWide {
+  width: 50vw;
+  height: auto;
 }
 
 .App-footer {
   background-color: #282c34;
-  min-height: 5vh;
+  height: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;

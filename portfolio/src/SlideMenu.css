@@ -1,10 +1,11 @@
 /* Position and sizing of burger button */
 .bm-burger-button {
-    position: fixed;
+    position: absolute;
     width: 36px;
     height: 30px;
-    left: 36px;
-    top: 36px;
+    vertical-align: center;
+    left: 20px;
+    top: 20px;
   }
   
   /* Color/shape of burger icon bars */
@@ -14,7 +15,7 @@
   
   /* Color/shape of burger icon bars on hover*/
   .bm-burger-bars-hover {
-    background: #a90000;
+    background: #54586d;
   }
   
   /* Position and sizing of clickable cross button */
@@ -39,7 +40,7 @@
   
   /* General sidebar styles */
   .bm-menu {
-    background: #373a47;
+    background: #404858;
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
     color: white;

@@ -1,30 +1,39 @@
 import React from 'react';
 import './App.css';
-//import {slide as Menu} from 'react-burger-menu'
 import SlideMenu from "./SlideMenu";
-import headshot from "./Headshot.jpg";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Home from "./Home"
+import About from "./About"
+import Projects from "./Projects"
 
-export class App extends React.Component {
-
+export class App extends React.Component { 
   render () {
     return (
       <div className="App">
         <SlideMenu className="App-menu"/>
-        <header className="App-header">
-          <h2>Christian Guerrero</h2>
-        </header>
-        <body className="App-body">
-          <div className="Body-row">
-            <img src={headshot} alt="Headshot" className="Headshot"/>
-            <div className="Body-info">
-              <h1>Hi, my name is Christian and I am a Software Engineer.</h1>
-            </div>
-          </div>
-          
-        </body>
-        <footer className="App-footer">
-  
-        </footer>
+        <Router>
+          <header className="App-header">
+            <nav>
+              <ul>
+                <li>
+                  <Link to="/"><button className="NavButton">Home</button></Link>
+                </li>
+                <li>
+                  <Link to="/about/"><button className="NavButton">About Me</button></Link>
+                </li>
+                <li>
+                  <Link to="/projects/"><button className="NavButton">Projects</button></Link>
+                </li>
+              </ul>
+            </nav>
+          </header>
+          <Route path="/" exact component={Home} />
+          <Route path="/about/" component={About} />
+          <Route path="/projects/" component={Projects} />
+        </Router>
+        {/*<footer className="App-footer"> 
+
+        </footer>*/}
       </div>
     );
   }
