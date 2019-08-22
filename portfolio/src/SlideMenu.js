@@ -36,9 +36,10 @@ export class SlideMenu extends React.Component {
       <div>
         <Menu isOpen={this.state.menuOpen}
           onStateChange={(state) => this.handleStateChange(state)}>
-          <a id="home" className="menu-item" href="/">Home</a>
-          <a id="about" className="menu-item" href="/about">About</a>
-          <a id="projects" className="menu-item" href="/projects">Projects</a>
+          <a id="home" className="menu-item" href="/"><h3>Home</h3></a>
+          <a id="about" className="menu-item" href="/about"><h3>About</h3></a>
+          <a id="projects" className="menu-item" href="/projects"><h3>Projects</h3></a>
+          <a id="resume" className="menu-item" href="/resume"><h3>Resume</h3></a>
           {/*<a onClick={ this.showSettings } className="menu-item--small" href="">Settings</a>*/}
         </Menu>
       </div>
