@@ -7,6 +7,7 @@ import Home from "./Home"
 import About from "./About"
 import Projects from "./Projects"
 import Resume from "./Resume"
+import NMI from './NMI';
 
 export class App extends React.Component { 
   render () {
@@ -33,6 +34,7 @@ export class App extends React.Component {
           <Route path="/about/" component={About} />
           <Route path="/projects/" component={Projects} />
           <Route path="/resume/" component={Resume} />
+          <Route path="/nmi/" component={NMI} />
         </HashRouter>
         {/*<footer className="App-footer"> 
 

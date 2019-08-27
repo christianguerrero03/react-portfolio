@@ -40,6 +40,7 @@ export class SlideMenu extends React.Component {
           <a id="about" className="menu-item" href="/#/about"><h3>About</h3></a>
           <a id="projects" className="menu-item" href="/#/projects"><h3>Projects</h3></a>
           <a id="resume" className="menu-item" href="/#/resume"><h3>Resume</h3></a>
+          <a id="nmi" className="menu-item" href="/#/nmi"><h3>NMI</h3></a>
           {/*<a onClick={ this.showSettings } className="menu-item--small" href="">Settings</a>*/}
         </Menu>
       </div>
