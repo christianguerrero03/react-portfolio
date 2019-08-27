@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import SlideMenu from "./SlideMenu";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { HashRouter } from 'react-router-dom';
 import Home from "./Home"
 import About from "./About"
 import Projects from "./Projects"
@@ -12,7 +13,7 @@ export class App extends React.Component {
     return (
       <div className="App">
         <SlideMenu className="App-menu"/>
-        <Router>
+        <HashRouter>
           <header className="App-header">
             <nav>
               <ul>
@@ -32,7 +33,7 @@ export class App extends React.Component {
           <Route path="/about/" component={About} />
           <Route path="/projects/" component={Projects} />
           <Route path="/resume/" component={Resume} />
-        </Router>
+        </HashRouter>
         {/*<footer className="App-footer"> 
 
         </footer>*/}
